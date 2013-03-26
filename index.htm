@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formee - http://www.formee.org</title>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/formee.js"></script>
+<link rel="stylesheet" href="css/formee-structure.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/formee-style.css" type="text/css" media="screen" />
+<style type="text/css">
+* {margin:0;padding:0;}
+/* fix  ff bugs */
+form:after, div:after, ol:after, ul:after, li:after, dl:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+	overflow:hidden;
+}
+body {background: #fff; font: normal 10px/1.1em Arial,Sans-Serif;margin:0;padding:0;}
+form {clear:both;}
+.container {margin:0 auto; height:100%;padding:0 40px;}
+.footer, .footer a {color:#fff;}
+.left {float:left;}
+.right {float:right;}
+.topbar {
+	background: #fafafa;
+	padding: 10px 30px;
+  border-bottom:1px solid #e9e9e9;
+}
+.topbar a{
+	color:#777;
+	font-size:1.4em;
+	text-decoration: none;
+}
+.topbar a:hover{
+	color:#69a4d0;
+	text-decoration: underline;
+}
+.formeebar {
+	background: #f5f5f5;
+	padding:30px;
+  border-bottom:1px solid #e9e9e9;
+  margin-bottom:40px;
+}
+.formeebar a {color:#fff;font-size:1.4em;text-decoration: none;}
+.formeebar h1 {
+  clear:both;
+  float:left;
+}
+.formeebar h1 a{
+  background: transparent url(img/formee-logo.png) no-repeat left top;
+  text-indent:-9999px;
+  overflow: hidden;
+  width:147px;
+  height: 50px;
+  display: block;
+}
+.formeebar h2 {
+	color:#520026;
+	font-size:2.4em;
+	font-weight:normal;
+	 float:right;
+	 display:inline;
+	 margin-top:20px;
+}
+
+.link-to {
+	font-size:2.4em;
+	letter-spacing:-.02em;
+	line-height:1em;
+	color:#EA0076;
+	float:right;
+	margin-bottom:2em;
+}
+/* footer */
+.footer {background: #520026;padding:30px 0;margin-top:40px;color:#fff;}
+.footer p {line-height:1.1em; font-size:1.2em; margin-bottom:.3%;}
+.footer a {color:#F0CF73;font-size:1.4em;text-decoration: none;}
+</style>
+
+</head>
+
+<body>
+    	<div class="topbar">
+    	  <a class="left" href="http://www.formee.org" title="Formee website"><strong>www.formee.org</strong></a>
+    	  <a class="right" href="http://www.twitter.com/formeeframework" title="@formeeframework">@formeeframework</a>
+    	</div>     
+<div class="formeebar">
+
+	<h1><a href="http://www.formee.org" title="Formee website">www.Formee.org</a></h1>
+    <h2><strong>DEMO</strong> / Fresh baked forms for your websites!</h2>
+</div>
+<div class="container">
+    <p><a class="link-to" href="reference.htm" title="check out our reference guide">check out our reference guide</a></p>
+    
+    
+    <div class="formee-msg-info">
+    	<h3>Information Message</h3>
+        <ul>
+        	<li>Don't forget to use <strong>for=""</strong> and <strong>id=""</strong> to make your form more accessible</li>
+        	<li>We only used <strong>javascript</strong> to guarantee equal height elements (using the <strong>.formee-equal</strong> class)</li>
+        </ul>
+    
+    </div>
+    
+	<!-- formee-->
+	<form class="formee" action="">
+    <fieldset>
+        <legend>Polls Available</legend>
+
+        <div class="grid-12-12">
+                <label>Field Label <em class="formee-req">*</em></label>
+                <ul class="formee-list">
+                    <li><input name="radio-01" type="radio" /><label>Option 01</label></li>
+                    <li><input name="radio-01" type="radio" /><label>Option 02</label></li>
+                    <li><input name="radio-01" type="radio" /><label>Option 03</label></li>
+                    <li><input name="radio-01" type="radio" /><label>Option 04</label></li>
+                </ul>
+        </div>
+        <div class="grid-12-12">
+               <input class="right" type="submit" title="send" value="Place Bet" />
+        </div>
+    </fieldset>
+    
+  
+	</form>
+	<!-- formee-->
+
+</div>
+
+<div class="footer">
+    	<div class="container">
+    	  <p><a href="http://www.formee.org" title="Formee">Formee</a> was created and developed by <a class="twitter-anywhere-user" href="http://www.bernarddeluna.com" title="bernard de luna">Bernard De Luna</a>, <a class="twitter-anywhere-user" href="http://www.dnlaraujo.com.br/" title="Daniel Araujo">Daniel Araujo</a>, <a class="twitter-anywhere-user" href="http://www.marcellomanso.com.br/" title="Marcello Manso">Marcello Manso</a></p>
+    	  <p>Licensed under <a rel="license" href="http://www.gnu.org/licenses/gpl.html" title="GPL">GPL</a> and <a rel="license" href="http://www.opensource.org/licenses/mit-license.php" title="MIT">MIT</a></p>
+    	</div>
+</div>
+</body>
+</html>
